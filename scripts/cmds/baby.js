@@ -1,11 +1,11 @@
-jsconst axios = require('axios');
+const axios = require('axios');
 const baseApiUrl = async () => {
     return "https://baby-apisx.vercel.app";
 };
 
 module.exports.config = {
     name: "baby",
-    aliases: ["baby", "jan", "suna"],
+    aliases: ["baby", "bby", "bot"],
     version: "0.0.1",
     author: "ArYAN",
     countDown: 0,
