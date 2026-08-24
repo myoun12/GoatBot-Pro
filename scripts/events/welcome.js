@@ -17,7 +17,7 @@ module.exports = {
     en: {
       defaultWelcomeMessage: "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 {userName} 🎉\n┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n✦ Glad to have you here! Enjoy your stay and make great memories 🌸",
       botAddedMessage:
-        "━━━━━━━━━━━━━━━━━━━\n🤖 ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ! 💖\n\n⚙️ ʙᴏᴛ ᴘʀᴇꜰɪx : /\n📜 ᴛʏᴘᴇ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs\n\n✨ ʟᴇᴛ's ᴍᴀᴋᴇ ᴛʜɪs ɢʀᴏᴜᴘ ᴇᴠᴇɴ ᴍᴏʀᴇ ꜰᴜɴ ᴛᴏɢᴇᴛʜᴇʀ! 😄\n━━━━━━━━━━━━━━━━━━━"
+        "═════════════════════════\n ✦ WELCOME TO MY BOT ✦\n═════════════════════════\n ➢ Thank you for adding me to:\n ⇝ {threadName} 💫\n\n 📌 Prefix: +\n 📜 Commands: +help\n 👑 Owner: মা ই য়ু ন\n 👥 My Group: ༊--''ƊɪɢɪƬᴀʟ Ƥᴀɢʟᴀ Ǥᴀʀᴀᴅ ༉[ Pᴀʙɴᴀ ]💟🙅\n 🔗 Facebook: https://www.facebook.com/md.myoun.2024\n═════════════════════════"
     }
   },
 
@@ -39,7 +39,10 @@ module.exports = {
 
       if (userID == botID) {
         if (nickNameBot) await api.changeNickname(nickNameBot, threadID, botID);
-        return message.send(getLang("botAddedMessage", prefix));
+        
+        let botAddedMsg = getLang("botAddedMessage");
+        botAddedMsg = botAddedMsg.replace(/\{threadName\}/g, threadName);
+        return message.send(botAddedMsg);
       }
 
       const userName    = user.fullName;
