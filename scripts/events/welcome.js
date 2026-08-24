@@ -1,4 +1,4 @@
-const { drive } = global.utils;
+Const { drive } = global.utils;
 const { nickNameBot } = global.GoatBot.config;
 const { createCanvas, loadImage } = require("canvas");
 const fs = require("fs-extra");
@@ -15,7 +15,7 @@ module.exports = {
 
   langs: {
     en: {
-      defaultWelcomeMessage: "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 {userName} 🎉\n┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n✦ Glad to have you here! Enjoy your stay and make great memories 🌸",
+      defaultWelcomeMessage: "🌸 ─────────────────────── 🌸\n       🎉 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 🎉\n🌸 ─────────────────────── 🌸\n ➢ Name: {userName}\n ⇝ To Group: {threadName}\n 📌 Total Members: {memberCount}\n 👑 Invited By: {inviterName}\n\n ❝ Enjoy your stay and make great memories with us! ✨ ❞\n🌸 ─────────────────────── 🌸",
       botAddedMessage:
         "═════════════════════════\n ✦ WELCOME TO MY BOT ✦\n═════════════════════════\n ➢ Thank you for adding me to:\n ⇝ {threadName} 💫\n\n 📌 Prefix: +\n 📜 Commands: +help\n 👑 Owner: মা ই য়ু ন\n 👥 My Group: ༊--''ƊɪɢɪƬᴀʟ Ƥᴀɢʟᴀ Ǥᴀʀᴀᴅ ༉[ Pᴀʙɴᴀ ]💟🙅\n 🔗 Facebook: https://www.facebook.com/md.myoun.2024\n═════════════════════════"
     }
