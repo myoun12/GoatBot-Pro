@@ -1,4 +1,4 @@
-Cmd install baby.js const axios = require('axios');
+const axios = require('axios');
 const baseApiUrl = async () => {
     return "https://baby-apisx.vercel.app";
 };
